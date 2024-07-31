@@ -1,0 +1,17 @@
+
+body {
+  display: flex; /*Posición forzosa del cuadro del juego*/
+  justify-content: center; /*Posición forzosa del cuadro del juego 2*/
+  align-items: center; /*Posición forzosa del cuadro del juego 3*/
+  height: 100vh; /*Posición del cuadro del juego*/
+  margin: 0;
+  background-color: black; /*Color del fondo del juego*/
+}
+
+#game-container {
+  position: relative; 
+}
+
+#gameCanvas {
+  border: 3px solid red; /*Color de los bordes*/
+}

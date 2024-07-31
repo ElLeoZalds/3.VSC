@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuenta y Contraseña</title>
+  <script> src="Ejemplo_01.js"</script>
+</head>
+<body>
+  <form action="Ejemplo_01.js"> 
+    <table>
+      <tr>
+        <td><label for="CdU">Correo Electrónico o Teléfono:</label></td>
+        <td><input type="text" id="CdU" required=true ></td>
+      </tr>
+      <tr>
+        <td><label for="Clave">Contraseña:</label></td>
+        <td><input type="password" id="Clave" required=true ></td>
+      </tr>
+      <tr>
+        <td><label for="">Autorización de Edad</label></td>
+        <td><input type="number" value="18" min="18" max="60" placeholder="5" required=true step="0.1"></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button type="reset">Reiniciar</button>
+          <button type="submit">Enviar</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+</html>

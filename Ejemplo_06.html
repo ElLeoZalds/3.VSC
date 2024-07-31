@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etapa de Vida</title>
+</head>
+<body>
+    <script>
+
+        var Nombres, Apellidos, Genero, EtapaVida;
+        var Edad = 0;
+
+        alert("Etapa de Vida");
+        alert("Por favor, Ingrese los datos de la persona");
+        Nombres = prompt("Ingrese el/los Nombres de la persona").toUpperCase();
+        Apellidos = prompt("Ingrese los Apellidos de la persona").toUpperCase();
+
+        Edad = parseInt(prompt("Por favor, Ingrese la edad de la persona"));
+
+        if (Edad >= 0 && Edad <= 2){
+            EtapaVida = " DE BEBE";
+        } else if (Edad >= 3 && Edad <= 5) {
+            EtapaVida = " DE NIÑO";
+        } else if (Edad >= 6 && Edad <= 12){
+            EtapaVida = " DE PUBERTAD";
+        } else if (Edad >= 13 && Edad <= 18){
+            EtapaVida = " DE ADOLESCENTE";
+        } else if (Edad >= 19 && Edad <= 25){
+            EtapaVida = " DE JOVEN";
+        } else if (Edad >= 26 && Edad <= 60){
+            EtapaVida = " DE ADULTO";
+        } else {
+            EtapaVida = " DE ADULTO MAYOR";
+        }
+        
+        Genero = parseFloat(prompt("Por favor, ingrese el género de la persona"));
+        document.write("SE A REGISTRADO EN LA ETAPA" + EtapaVida + " A " + Apellidos + ", " + Nombres + "");
+
+    </script>
+</body>
+</html>

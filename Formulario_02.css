@@ -1,0 +1,48 @@
+.Centro{
+    text-align: center ;
+}
+/* Estilos para la tabla */
+.Tabla {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #ddd;
+  }
+  
+  /* Estilos para las celdas de encabezado */
+  .Tabla th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  /* Estilos para las celdas de datos */
+  .Tabla td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  /* Estilos para la fila de encabezado */
+  .Tabla tr.Centro td {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Estilos para el botón de enviar */
+  .Tabla button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Estilos para el botón de enviar al pasar el ratón por encima */
+  .Tabla button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  .Color{
+    background-color: rgb(192, 192, 192);
+  }

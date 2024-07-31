@@ -1,0 +1,9 @@
+.juntar td:first-child,
+.juntar td:nth-child(2) {
+  width: 50px; /* Ancho de las celdas */
+  height: 30px; /* Altura de las celdas */
+}
+
+.color{
+  background-color: rgb(122, 250, 252);
+}

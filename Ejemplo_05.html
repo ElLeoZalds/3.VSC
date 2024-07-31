@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TablaDeMultiplicar</title>
+</head>
+<body>
+  <script>
+
+    var TablaInicial;
+    var TablaFinal;
+
+    TablaInicial = (parseInt(prompt("INGRESE EL PRIMER NUMERO DE LA TABLA DE MULTIPLICAR")))
+    TablaFinal = (parseInt(prompt("INGRESE EL ULTIMO NUMERO DE LA TABLA DE MULTIPLICAR")))
+
+    for(var i = TablaInicial ; i<=TablaFinal ; i++){
+      for(var j = 0 ; j<=12 ; j++){
+        document.write(i + " * " + j + " = " + i*j + "<br>" )
+      }
+      document.write("<br>")
+    }
+
+  </script>
+  
+</body>
+</html>

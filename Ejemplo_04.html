@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdivinarNumero</title>
+</head>
+<body>
+  <script>
+ 
+    var Num = parseInt(Math.random()*100)+1;
+    var Num, v;
+    intentos=10;
+    alert("Jugaremos a Adivinar el Número");
+    
+    n = false;
+
+    while(n == false && intentos > 0){
+      v=parseInt(prompt("Por favor, ingrese un Número", 0));
+
+      if(Num > v){
+        alert("El número ingresado es MUY BAJO");
+      } else {
+        if(Num <  v){
+          alert("El número ingresado es MUY ALTO");
+        }else{
+          n = true;
+          alert("FELICIDADES, HAS ACERTADO!");
+        }
+      }
+
+      intentos--;
+      alert("Te quedan "+ intentos + " intentos");
+      if(intentos ==0 ){
+        alert("Lamentablemente Perdiste, ¡PUEDES HACERLO MEJOR PARA LA PROXIMA");
+        alert("EL NÚMERO ESCONDIDO ERA " + Num);
+      }else{
+        if(n == true){
+          alert("Te quedaron "+ intentos + " intentos Sobrantes");
+        }
+      }
+    }
+
+  </script>
+</body>
+</html>

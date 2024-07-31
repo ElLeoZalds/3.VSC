@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enunciado02</title>
+  <style>
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <script>
+    alert("DETERMINANDO MONTO A PAGAR");
+
+    var NumTrab = parseInt(prompt("INGRESE LA CANTIDAD DE TRABAJADORES", 0));
+    var TarifaPorHora = parseFloat(prompt("INGRESE LA TARIFA POR HORA", 0)); 
+    alert("LA TARIFA POR HORAS EXTRA ES " + TarifaPorHora * 2);
+
+    var TotalAPagar = 0;
+
+    document.write("<h2>Detalles de los trabajadores</h2>");
+    document.write("<table>");
+    document.write("<tr><th>N° DE TRABAJADOR</th> <th>APELLIDOS</th> <th>NOMBRE(S)</th> <th>DÍAS LABORADOS</th> <th>HORAS TRABAJADAS</th> <th>HORAS NORMALES</th> <th>HORAS EXTRA</th> <th>PAGO NORMAL</th> <th>PAGO EXTRA</th> <th>SUELDO</th> </tr>");
+
+    for (var i = 1; i <= NumTrab; i++) {
+      var Apellidos = prompt("INGRESE LOS APELLIDOS DEL TRABAJADOR " + i, "").toUpperCase();
+      var Nombre = prompt("INGRESE EL/LOS NOMBRE(S) DEL TRABAJADOR " + i, "").toUpperCase();
+      var DiasLab = parseInt(prompt("INGRESE EL NÚMERO DE DÍAS LABORADOS DEL TRABAJADOR " + Apellidos + " " + Nombre));
+      var HorasTrab = parseInt(prompt("INGRESE EL NÚMERO DE HORAS LABORADAS DEL TRABAJADOR " + Apellidos + " " + Nombre));
+      var HorasNormls = Math.min(HorasTrab, DiasLab * 8);
+      alert("LAS HORAS NORMALES DEL TRABAJADOR ES" + HorasNormls)
+      var HorasExtra = Math.max(HorasTrab - (DiasLab * 8), 0)
+      var PagoNormal = HorasNormls * TarifaPorHora;
+      var PagoExtra = HorasExtra * (TarifaPorHora * 2);
+      var SueldoSemanal = PagoNormal + PagoExtra;
+
+      document.write("<tr>");
+      document.write("<td>" + i + "</td>");
+      document.write("<td>" + Apellidos + "</td>");
+      document.write("<td>" + Nombre + "</td>");
+      document.write("<td>" + DiasLab + "</td>");
+      document.write("<td>" + HorasTrab + "</td>");
+      document.write("<td>" + HorasNormls + "</td>");
+      document.write("<td>" + HorasExtra + "</td>");
+      document.write("<td>$" + PagoNormal.toFixed(2) + "</td>");
+      document.write("<td>$" + PagoExtra.toFixed(2) + "</td>");
+      document.write("<td>$" + SueldoSemanal.toFixed(2) + "</td>");
+      document.write("</tr>");
+
+      TotalAPagar += SueldoSemanal;
+    }
+
+    document.write("</table>");
+    document.write("<h2>Total a pagar por la empresa: $" + TotalAPagar.toFixed(2) + "</h2>");
+  </script>
+</body>
+</html>
+
+
+<!--Determinar el monto a pagar, semanalmente por una empresa
+que tiene “n” trabajadores los cuales ganan la misa tarifa
+por hora normal, pero por hora extra su tarifa se duplica.
+Considerar el número de días que laboró para hallar las horas extra.
+Se consideran horas extras aquellas que excedan al producto de los 
+días que laboró por 8. Mostrar el cálculo por cada trabajador y el
+total a pagar por la empresa.->

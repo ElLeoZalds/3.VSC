@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro - Mi web</title>
+</head>
+<body>
+    <h2>Formulario de registro</h2>
+    <form method="get">
+        <table>
+
+            <tr>
+                <td><label for="nombre">Nombre(s):</label></td>
+                <td><input type="text" id="nombre" name="nombre" required minlength="0" maxlength="50"></td>
+            </tr>
+
+            <tr>
+                <td><label for="apell">Apellidos:</label></td>
+                <td><input type="text" id="apell" name="apellidos" required minlength="0" maxlength="50"></td>
+            </tr>
+
+            <tr>
+                <td>Genero:</td>
+                <td><input type="radio" id="sexo_hombre" name="sexo" value="hombre"><label for="sexo_hombre">Masculino</label></td>
+                <td><input type="radio" id="sexo_mujer" name="sexo" value="mujer"><label for="sexo_mujer">Femenino</label></td>
+            </tr>
+
+            <tr>
+                <td><label for="correo">Correo Electrónico:</label></td>
+                <td><input type="text" id="correo" name="correo" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="poblacion">Población:</label></td>
+                <td>
+                    <select id="poblacion" name="poblacion">
+                        <option value="alicante">Alicante</option>
+                        <option value="madrid">Madrid</option>
+                        <option value="sevilla">Sevilla</option>
+                        <option value="valencia">Valencia</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="descripcion">Descripción:</label></td>
+                <td><textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><input type="checkbox" id="novedades" name="novedades"><label for="novedades">Deseo recibir información sobre novedades y ofertas</label></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><input type="checkbox" id="condiciones" name="condiciones"><label for="condiciones">Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><button type="submit">Enviar</button></td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>
+
+    <!-- FORMACION PRACTICA REMOTAtareas con sus operaciones indicadas anteriormente
+         no podrán ser modificadas; y losparticipantes durante el semestre, deberán
+          presentar cinco entregables, los mismosque deberán ser calificados, la nota
+           final es el promedio de estos. Los alumnospueden agruparse de 2 a 5 participantes
+            como máximo.1. Tarea 1: Desarrolla página web utilizando conceptos semánticos:
+            Crea una página web que contenga un formulario con los siguientes campos deinformación:
+            • El nombre, con un control de tipo texto.• Los apellidos, con un control de tipo texto.
+            • El sexo, con dos opciones excluyentes hombre o mujer.• El correo electrónico, con un control de tipo texto.
+            • Una casilla de verificación con el texto "Deseo recibir información sobrenovedades y ofertas".
+            • Una casilla de verificación con el texto "Declaro haber leido y aceptar 
+            lascondiciones generales del programa y la normativa sobre protección dedatos".
+            • Un botón de envío.Además, tienes que tener en cuenta los siguientes requisitos:
+            • El título de la página debe ser Formulario de registro - Mi web.
+            • El método de envío del formulario debe ser GET.• El destino del envío del formulario debe ser "".
+            • La longitud máxima de entrada de datos de los controles para el nombre ylos apellidos debe 
+            ser 50 caracteres.• La casilla de verificación con el texto "Deseo recibir información sobrenovedades 
+            y ofertas" debe estar activada por defecto.Al formulario anterior le tienes que añadir los siguientes 
+            campos de información:• Población, una lista desplegable con las opciones Alicante, Madrid, Sevillay Valencia.
+            • Descripción, un área de texto multilínea.Además, tienes que asociar la etiqueta de cada control a su 
+            control para mejorarla usabilidad y la accesibilidad
+    -->

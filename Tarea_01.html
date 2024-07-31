@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarea_01</title>
+  <script src="Tarea_01.js"></script>
+
+<style>
+  td{
+    border: 2px solid black;
+  }
+
+  input[type = "text"]{
+    text-transform: uppercase;
+  }
+</style>
+
+</head>
+<body>
+  
+<form action="" method="post">
+
+<h1><u style="font-family: 'Times New Roman', Times, serif;">Datos de Nombres</u></h1>
+
+<table>
+
+<tr>
+
+<td>
+  <label for="txtNombres">Nombre: </label>
+</td>
+
+<td><input type="text" name="nombre" id="txtNombres" required></td>
+
+</tr>
+
+<tr>
+
+<td> <label for="txtApellidos">Apellidos: </label></td>
+<td><input type="text" name="Apellidos" id="txtApellidos" required></td>
+
+</tr>
+
+<tr>
+
+  <td><label for="txtDNI">DNI: </label></td>
+  <td><input type="text" id="txtDNI" required maxlength="8"></td>
+
+</tr>
+
+<tr><td><button type="submit" onclick="Validar()">Buscar</button></td></tr>
+
+</table>
+
+</form>
+
+</body>
+</html>

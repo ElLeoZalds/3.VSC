@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enunciado04</title>
+</head>
+<body>
+    <input type="text" id="BuscarTexto" placeholder="Ingrese el Texto para Buscar">
+    <button onclick="MatrixdeBusqueda()">Buscar</button>
+    <p id="RESULTADO"></p>
+<script>
+    alert("BUSCAR TEXTO EN UNA MATRIX");
+    function MatrixdeBusqueda(){
+        var BuscarTexto = document.getElementById("BuscarTexto").value;
+        var Matrix= [
+            ["Hola Mundo", "Cuando Sea Grande"],
+            ["Solo estoy Sobreviviendo", "Nunca prometas en vano"],
+            ["No te invite a mi cumpleaños", "Yo no morire"] //Agregar más textos
+        ];
+
+        var Encontrado = false;
+        var Posición = "";
+
+        for(var i = 0; i<Matrix.length; i++){
+            for(var j = 0; j<Matrix[i].length; j++){
+                if(Matrix[i][j] === BuscarTexto){
+                    Encontrado = true;
+                    Posición = "ENCONTRADO EN LA POSICIÓN [" + i + "][" + j + "]";
+                    break;
+                }
+            }
+            if (Encontrado) break;
+        }
+
+        if (Encontrado) {
+            document.getElementById("RESULTADO").innerHTML = Posición;
+        } else {
+            document.getElementById("RESULTADO").innerHTML = "TEXTO NO ENCONTRADO EN LA MATRIX";
+        }
+/*Cree una función que busque un texto dentro de una matriz, y determine la posición en la
+que se encuentra el texto. En caso no se encuentre debe mostrar un mensaje pertinente.*/
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EjercicioVectores</title>
+</head>
+<body>
+  <script>
+  var carro = new Array(9);
+  var carrito = new Array(9);
+  var camion = new Array(9);
+
+  for(var x = 0; x <= 9; x++){
+    carro[x] = prompt("INGRESAR EL VECTOR 1 EN SU ESPACIO " + x + ":");
+  };
+  for(var y = 0; y <= 9; y++){
+    carrito[y] = prompt("INGRESAR EL VECTOR 2 EN SU ESPACIO " + y + ":")
+  };
+  for(var z = 0; z <= 9; z++){
+    camion[z] = parseInt(carro[z]) + parseInt(carrito[z])
+  };
+  for(var w = 0; w <= 9; w++){
+    alert("EL VALOR DEL VECTOR ES:" + camion[w])
+  };
+  </script>
+</body>
+</html>

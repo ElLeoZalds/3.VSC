@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo_03</title>
+  <script src="Ejemplo_03.js"></script>
+  <link rel="stylesheet" href="Ejemplo_03.css">
+</head>
+<body>
+  <h1>I.E.Privada "José Gálvez"</h1><br><br>  <img src="Colegio.jpg" alt="5" width="50" height="50">
+  <div>
+    <form action="Ejemplo_03.js" method="post"> <!-- or action="procesar.php" (replace 'procesar.php' with the appropriate backend file) -->
+
+      <table style="border-collapse: collapse;" border="1">
+
+        <tr class="Centro"><td colspan="6" class="Color">DATOS PERSONALES</td></tr>
+        <tr><td colspan="6" ><button type="reset" class="Color0">REINICIAR</button></td></tr>
+  -
+        <tr> 
+          <td class="Color2"><label for="txtApellidos">APELLIDOS:</label></td>
+          <td colspan="2" class="Centro Color"><input type="text" class="Color0" id="txtApellidos" required></td>
+          <td class="Color2"><label for="txtNombres" >NOMBRES:</label></td>
+          <td colspan="2" class="Centro Color"><input type="text" class="Color0" id="txtNombres" required></td>
+        </tr>
+
+        <tr>
+          <td class="Color2"><label for="txtGenero">GÉNERO</label></td>
+          <td class="Centro Color"><input type="text" class="Color0" id="txtGenero" required></td>
+          <td class="Color"></td>
+          <td class="Color2"><label for="txtEdad">EDAD</label></td>
+          <td class="Centro Color"><input type="number" class="Color0" id="txtEdad" required></td>
+          <td class="Color"></td>
+        </tr>
+
+        <tr><td colspan="6"></td></tr>
+
+        <tr class="Centro"><td colspan="6" class="Color">RECORD ACADÉMICO</td></tr>
+
+        <tr><td colspan="5"></td><td colspan="2" class="Centro"><button class="Color0" type="button" onclick="CapturarDatos()">ENVIAR</button></td></tr>
+
+        <tr>
+          <td colspan="2" class="Color2"><label for="txtANumeros">ÁREA NÚMEROS</label></td>
+          <td class="Centro Color"><input type="number" class="Color0" id="txtANumeros" required min="0" max="20" ></td>
+          <td colspan="2" class="Color2"><label for="txtALetras">ÁREA LETRAS</label></td>
+          <td class="Centro Color"><input type="number" class="Color0" id="txtALetras" required min="0" max="20" ></td>
+        </tr>
+
+        <tr>
+          <td colspan="2" class="Color2"><label for="txtACiencias">ÁREA CIENCIAS</label></td>
+          <td class="Centro Color"><input type="number" class="Color0" id="txtACiencias" required min="0" max="20" ></td>
+          <td colspan="2" class="Color2"><label for="txtAHumanidades">ÁREA HUMANIDADES</label></td>
+          <td class="Centro Color"><input type="number" class="Color0" id="txtAHumanidades" required min="0" max="20" ></td>
+        </tr>
+
+        <tr><td colspan="6"></td></tr>
+
+        <tr>
+          <td colspan="3" class="Color"></td>
+          <td colspan="2" class="Color2"><label for="txtStatus">STATUS</label></td>
+          <td class="Color Centro"><input type="text" class="Color0" id="txtStatus"></td>
+        </tr>
+
+      </table>
+    </form>
+  </div>
+</body>
+</html>

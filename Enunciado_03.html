@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enunciado03</title>
+</head>
+<body>
+  <script>
+
+    alert("EDAD DE UNA PERSONA"); 
+
+    var NombreApell, Edad;
+    var AñoActual = 2024;
+    var Dia= 0;
+    var Mes = 0;
+
+    NombreApell = prompt("Por Favor, Ingrese sus Apellidos y su(s) Nombre(s)").toUpperCase();
+    AñoDeNacimiento = prompt("Por Favor, Ingrese su Fecha De Nacimiento");
+    var AñoDeNacimientoExacto = AñoDeNacimiento.substring(6,10)
+
+    Edad = AñoActual - AñoDeNacimientoExacto;
+
+    document.write("BIENVENIDO ESTIMADO(A) " + NombreApell + " SU EDAD RECONOCIDA ES DE " + Edad + " AÑOS Y NACISTE EL " + AñoDeNacimiento);
+    alert("BIENVENIDO ESTIMADO(A) " + NombreApell + " SU EDAD RECONOCIDA ES DE " + Edad + " AÑOS ");
+
+  </script>
+</body>
+</html>
+ <!--Cree una función que determine la edad de una persona.->

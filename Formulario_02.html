@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario_02</title>
+  <link rel="stylesheet" href="Formulario_02.css">
+</head>
+<div>
+<body>
+  <form> 
+    <table class="Tabla" border="1">
+      <tr class="Centro">
+        <td colspan="6" class="Color">DATOS PERSONALES</td>
+      </tr>
+      <tr>
+        <td><label for="APell">APELLIDOS</label></td>
+        <td><input type="text" id="APell" required></td>
+      </tr>
+      <tr>
+        <td><label for="Nombre">NOMBRES</label></td>
+        <td><input type="text" id="Nombre" required></td>
+      </tr>
+      <tr>
+        <td><label for="Genero">GÉNERO</label></td>
+        <td><input type="radio" id="Sexo_Masculino" name="Sexo" value="Masculino" required>M<input type="radio" id="Sexo_Femenino" name="Sexo" value="Femenino" required>F</td>
+        <td><label for="FechaNac">FECHA DE NACIMIENTO</label></td>
+        <td><input type="date" id="FechaNac" required></td>
+      </tr>
+      <tr>
+        <td><label for="TipoDoc">TIPO DE DOCUMENTO</label></td>
+        <td>
+          <select name="TipoDoc" id="TipoDoc">
+            <option value="DNI">DNI</option>
+            <option value="Pasaporte">PASAPORTE</option>
+            <option value="CarnetExtranjeria">CARNET EXTRANJERÍA</option>
+            <option value="PermisoTemporal">PERMISO TEMPORAL</option>
+          </select>
+        </td>
+        <td><label for="NumDoc">NÚMERO DE DOCUMENTO</label></td>
+        <td><input type="number" id="NumDoc" required></td>
+      </tr>
+      <tr class="Centro">
+        <td colspan="6" class="Color">DATOS LABORALES</td>
+      </tr>
+      <tr>
+        <td><label for="FecInicio">FECHA DE INICIO</label></td>
+        <td><input type="date" id="FecInicio" required></td>
+        <td><label for="AñosLab">AÑOS LABORADOS</label></td>
+        <td><input type="text" id="AñosLab"></td>
+      </tr>
+      <tr>
+        <td><label for="FecFin">FECHA FINAL</label></td>
+        <td><input type="date" id="FecFin" required></td>
+        <td><label for="PagoxAños">PAGO POR AÑO</label></td>
+        <td><input type="number" id="PagoxAños" required></td>
+      </tr>
+      <tr>
+        <td><label for="Estado">ESTADO</label></td>
+        <td><input type="text" id="Estado" readonly></td>
+        <td><label for="TotalACobrar">TOTAL A COBRAR</label></td>
+        <td><input type="text" id="TotalACobrar" readonly></td>
+      </tr>
+    </table>
+    <tr>
+      <td><button type="submit">ENVIAR</button></td>
+    </tr>
+  </form>
+</div>
+  <script src="Formulario_02.js"></script>
+</body>
+</html>

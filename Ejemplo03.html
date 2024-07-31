@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IE. Privada "Jose Galvez"</title>
+  <script src="Ejemplo03.js"></script>
+  <link rel="stylesheet" href="Ejemplo03.css">
+</head>
+<body>
+  <h1>I.E.Privada "José Gálvez"</h1><br><br>
+  <div>
+  <form action="Ejemplo03.js" method="post">
+    <table>
+      <tr><td colspan="6" class="RACADEMICO" id="Racademico">DATOS PERSONALES</td></tr>
+      <tr><td colspan="6" class="espacio"></td></tr>
+      <tr>
+        <td><label for="txtApellidos">APELLIDOS:</label></td>
+        <td colspan="2"><input type="text" id="txtApellidos">
+        </td><td><label for="txtNombres">NOMBRES:</label></td>
+        <td colspan="2" ><input type="text" id="txtNombres" class="InputN"></td>
+      </tr>
+      <tr>
+        <td><label for="txtGenero">GÉNERO</label></td>
+        <td><input type="text" id="txtGenero"></td>
+        <td></td>
+        <td><label for="txtEdad">EDAD</label></td>
+        <td><input type="number" id="txtEdad"></td>
+        <td></td>
+      </tr>
+      <tr><td colspan="6" class="espacio"></td></tr>
+      <tr>
+        <td colspan="6" class="RACADEMICO">RECORD ACADÉMICO</td>
+      </tr>
+      <tr><td  colspan="5" class="espacio"><td class="espacio"><button type="button" onclick="CapturarDatos()">Enviar</button></td></td></tr>
+      <tr>
+        <td colspan="2"><label for="txtANumeros">ÁREA NÚMEROS</label></td>
+        <td><input type="number" id="txtANumeros"></td>
+        <td colspan="2"><label for="txtALetras">ÁREA LETRAS</label></td>
+        <td><input type="number" id="txtALetras"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><label for="txtACiencias">ÁREA CIENCIAS</label></td>
+        <td><input type="number" id="txtACiencias"></td>
+        <td colspan="2"><label for="txtAHumanidades">ÁREA HUMANIDADES</label></td>
+        <td><input type="number" id="txtAHumanidades"></td>
+      </tr>
+      <tr><td colspan="6" class="espacio"></td></tr>
+      <tr class="status">
+        <td colspan="5"><label for="txtStatus">STATUS</label></td>
+        <td class="status"><input type="text" id="txtStatus"></td>
+      </tr>
+    </table>
+  </form>
+</div>
+</body>
+</html>
